@@ -1,11 +1,10 @@
 import React from 'react';
-import CategoriesMenu from 'components/categories-menu/categories-menu.component';
+import Home from './routes/home/home.component';
 import './App.css';
 
 const App = () => {
-   
     return (
-        <CategoriesMenu/>
+        <Home/>
     );
 };
 
