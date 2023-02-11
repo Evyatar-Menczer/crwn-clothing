@@ -6,6 +6,7 @@ import {
     createAuthUserWithEmailAndPassword,
     createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
+
 const defaultFormFields = {
     displayName: '',
     email: '',
@@ -34,7 +35,6 @@ const SignUpForm = () => {
         } catch (error) {
             console.log('User creation error', error);
         }
-        debugger;
     };
 
     const handleChange = (event) => {
