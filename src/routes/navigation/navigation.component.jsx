@@ -1,5 +1,5 @@
 import { Fragment, useContext } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
@@ -18,7 +18,9 @@ const Navigation = () => {
         <Fragment>
             <NavigationContainer>
                 <LogoContainer>
-                    <CrwnLogo className="logo" />
+                    <NavLink to="/">
+                        <CrwnLogo className="logo" />
+                    </NavLink>
                 </LogoContainer>
                 <NavLinksConatainer>
                     <NavLink to="/shop">SHOP</NavLink>
